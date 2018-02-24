@@ -1,0 +1,11 @@
+st_cvisitor:
+    resource: "@STCvisitorBundle/Resources/config/routing.yml"
+    prefix:   /stc
+
+st_cmember:
+    resource: "@STCmemberBundle/Resources/config/routing.yml"
+    prefix:   /member
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
