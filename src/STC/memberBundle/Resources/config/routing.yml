@@ -1,0 +1,3 @@
+st_cmember_homepage:
+    path:     /
+    defaults: { _controller: STCmemberBundle:Default:index }

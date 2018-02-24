@@ -1,0 +1,3 @@
+st_cvisitor_homepage:
+    path:     /
+    defaults: { _controller: STCvisitorBundle:Default:index }
