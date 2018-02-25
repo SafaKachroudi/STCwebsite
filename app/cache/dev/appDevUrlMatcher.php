@@ -106,12 +106,8 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         // st_cvisitor_homepage
-        if (rtrim($pathinfo, '/') === '/stc') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'st_cvisitor_homepage');
-            }
-
-            return array (  '_controller' => 'STC\\visitorBundle\\Controller\\DefaultController::indexAction',  '_route' => 'st_cvisitor_homepage',);
+        if ($pathinfo === '/stc/index') {
+            return array (  '_controller' => 'STC\\visitorBundle\\Controller\\visitorController::getDataAction',  '_route' => 'st_cvisitor_homepage',);
         }
 
         // st_cmember_homepage

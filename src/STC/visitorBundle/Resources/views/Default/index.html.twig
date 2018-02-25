@@ -24,7 +24,6 @@
 </head>
 
 <body id="home" class="homepage">
-
     <header id="header">
         <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
             <div class="container">
@@ -48,7 +47,7 @@
                         <!--<li class="scroll"><a href="#about">Evenements</a></li>-->
                         <li class="scroll"><a href="#meet-team">Membres</a></li>
                         <li class="scroll"><a href="#pricing">Sign In/Up</a></li>
-                        <li class="scroll"><a href="#blog">Articles</a></li>
+                        <!--<li class="scroll"><a href="#blog">Articles</a></li>-->
                         <li class="scroll"><a href="#get-in-touch">Contactez-Nous</a></li>
                     </ul>
                 </div>
@@ -58,47 +57,22 @@
 
     <section id="main-slider">
         <div class="owl-carousel">
+            {% for highlight in highlights %}
             <div class="item" style="background-image: url({{asset('images/bggg1.png')}});">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="carousel-content">
-                                    <h2><span>Sesame Tech Club</span> participe à IOT Tunisia 2018</h2>
-                                    <p>Deux équipes seront présentes à IOT ayant des idées innoventes</p>
+                                    <h2><span>{{highlight.titreHighlight}}</span></h2>
+                                    <p>{{highlight.descHighlight}}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div><!--/.item-->
-             <div class="item" style="background-image: url({{asset('images/bggg2.jpg')}});">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="carousel-content">
-                                    <h2>Bientot une formation en <span>AngularJS</span> et<span> NodeJS </span></h2>
-                                    <p>Contactez-nous pour s'inscrire</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item" style="background-image: url({{asset('images/bggg3.jpg')}});">
-               <div class="slider-inner">
-                   <div class="container">
-                       <div class="row">
-                           <div class="col-sm-6">
-                               <div class="carousel-content">
-                                   <h2>Notre première édition de <span> Forum d'Entreprise</span> était bien réussite</h2>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
+            {% endfor %}
         </div>
     </section>
 
