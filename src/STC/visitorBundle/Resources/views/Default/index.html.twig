@@ -82,12 +82,12 @@
     <h2 class="section-title text-center wow fadeInDown">A propos de nous</h2>
     <!--<p class="text-center wow fadeInDown">Sesame Tech Club est un club crée par l'initiative d'un groupe d'étudiants de l'université Sesame <br> Notre club permet aux nouveaux étudiants de s’intégrer et de s’adapter à la vie estudiantine au sein de l’université SESAME.</p>-->
 </div>
-
+{% for c in club %}
 <div class="row">
     <div class="col-sm-6 wow fadeInLeft">
         <h3 class="column-title">Video Intro</h3>
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/L2wOZkW7zIY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="{{c.lienVideo}}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -97,27 +97,28 @@
                 <li role="presentation" class="active">
                     <a href="#tab1" role="tab" data-toggle="tab" aria-controls="tab1" aria-expanded="true">Présentation</a>
                 </li>
-                <li role="presentation">
+                <!--<li role="presentation">
                     <a href="#tab2" role="tab" data-toggle="tab" aria-controls="tab2" aria-expanded="false">Historique</a>
-                </li>
+                </li> -->
                 <li role="presentation">
                     <a href="#tab3" role="tab" data-toggle="tab" aria-controls="tab3" aria-expanded="false">Objectifs</a>
                 </li>
             </ul>
             <div id="tab-content" class="tab-content">
                 <div role="tabpanel" class="tab-pane fade active in" id="tab1" aria-labelledby="tab1">
-                    <p>Une présentation du club.</p>
+                    <p>{{c.presentation}}</p>
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledby="tab2">
-                    <p>L'historique du club.</p>
+                    <p></p> 
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="tab3" aria-labelledby="tab3">
-                    <p>Les objectifs du club.</p>
+                    <p>{{c.objectifs}}</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+      {% endfor %}
 </div>
     </section>
 
