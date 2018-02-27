@@ -15,8 +15,8 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e15c599e5ffa7acdb4a27c339c19f9687a92969119fa8a3b6a83aeaf24a7b083 = $this->env->getExtension("native_profiler");
-        $__internal_e15c599e5ffa7acdb4a27c339c19f9687a92969119fa8a3b6a83aeaf24a7b083->enter($__internal_e15c599e5ffa7acdb4a27c339c19f9687a92969119fa8a3b6a83aeaf24a7b083_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "STCvisitorBundle:Default:index.html.twig"));
+        $__internal_8c2dff9adc6bf9d7bcb39091aaba655f455271f01664d75df2520761da75b8fa = $this->env->getExtension("native_profiler");
+        $__internal_8c2dff9adc6bf9d7bcb39091aaba655f455271f01664d75df2520761da75b8fa->enter($__internal_8c2dff9adc6bf9d7bcb39091aaba655f455271f01664d75df2520761da75b8fa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "STCvisitorBundle:Default:index.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -200,9 +200,9 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
             echo twig_escape_filter($this->env, $this->getAttribute($context["c"], "presentation", array()), "html", null, true);
             echo "</p>
                 </div>
-                <!--<div role=\"tabpanel\" class=\"tab-pane fade\" id=\"tab2\" aria-labelledby=\"tab2\">
+                <div role=\"tabpanel\" class=\"tab-pane fade\" id=\"tab2\" aria-labelledby=\"tab2\">
                     <p></p> 
-                </div>-->
+                </div>
                 <div role=\"tabpanel\" class=\"tab-pane fade\" id=\"tab3\" aria-labelledby=\"tab3\">
                     <p>";
             // line 115
@@ -793,7 +793,7 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
 </html>
 ";
         
-        $__internal_e15c599e5ffa7acdb4a27c339c19f9687a92969119fa8a3b6a83aeaf24a7b083->leave($__internal_e15c599e5ffa7acdb4a27c339c19f9687a92969119fa8a3b6a83aeaf24a7b083_prof);
+        $__internal_8c2dff9adc6bf9d7bcb39091aaba655f455271f01664d75df2520761da75b8fa->leave($__internal_8c2dff9adc6bf9d7bcb39091aaba655f455271f01664d75df2520761da75b8fa_prof);
 
     }
 
@@ -922,9 +922,9 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
 /*                 <div role="tabpanel" class="tab-pane fade active in" id="tab1" aria-labelledby="tab1">*/
 /*                     <p>{{c.presentation}}</p>*/
 /*                 </div>*/
-/*                 <!--<div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledby="tab2">*/
+/*                 <div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledby="tab2">*/
 /*                     <p></p> */
-/*                 </div>-->*/
+/*                 </div>*/
 /*                 <div role="tabpanel" class="tab-pane fade" id="tab3" aria-labelledby="tab3">*/
 /*                     <p>{{c.objectifs}}</p>*/
 /*                 </div>*/
