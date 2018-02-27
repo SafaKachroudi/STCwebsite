@@ -36,14 +36,6 @@ class Event {
      */
     private $heureDebut;
     /**
-     * @ORM\Column(type="string", length=5)
-     */
-    private $heureFin;
-     /**
-     * @ORM\Column(type="string", length=500)
-     */
-    private $remarqueEvent;
-    /**
      * @ORM\ManyToOne(targetEntity="STC\visitorBundle\Entity\TypeEvent")
      */
     private $typeEvent;
