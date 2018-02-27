@@ -15,8 +15,8 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_91105782615eec743ac8631a41ecd8b65c15b645571579065c63e6c3242493a4 = $this->env->getExtension("native_profiler");
-        $__internal_91105782615eec743ac8631a41ecd8b65c15b645571579065c63e6c3242493a4->enter($__internal_91105782615eec743ac8631a41ecd8b65c15b645571579065c63e6c3242493a4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "STCvisitorBundle:Default:index.html.twig"));
+        $__internal_e15c599e5ffa7acdb4a27c339c19f9687a92969119fa8a3b6a83aeaf24a7b083 = $this->env->getExtension("native_profiler");
+        $__internal_e15c599e5ffa7acdb4a27c339c19f9687a92969119fa8a3b6a83aeaf24a7b083->enter($__internal_e15c599e5ffa7acdb4a27c339c19f9687a92969119fa8a3b6a83aeaf24a7b083_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "STCvisitorBundle:Default:index.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -163,12 +163,20 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
     <h2 class=\"section-title text-center wow fadeInDown\">A propos de nous</h2>
     <!--<p class=\"text-center wow fadeInDown\">Sesame Tech Club est un club crée par l'initiative d'un groupe d'étudiants de l'université Sesame <br> Notre club permet aux nouveaux étudiants de s’intégrer et de s’adapter à la vie estudiantine au sein de l’université SESAME.</p>-->
 </div>
-
-<div class=\"row\">
+";
+        // line 85
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["club"]) ? $context["club"] : $this->getContext($context, "club")));
+        foreach ($context['_seq'] as $context["_key"] => $context["c"]) {
+            // line 86
+            echo "<div class=\"row\">
     <div class=\"col-sm-6 wow fadeInLeft\">
         <h3 class=\"column-title\">Video Intro</h3>
         <div class=\"embed-responsive embed-responsive-16by9\">
-            <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/L2wOZkW7zIY\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen></iframe>
+            <iframe width=\"560\" height=\"315\" src=\"";
+            // line 90
+            echo twig_escape_filter($this->env, $this->getAttribute($context["c"], "lienVideo", array()), "html", null, true);
+            echo "\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -178,28 +186,40 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
                 <li role=\"presentation\" class=\"active\">
                     <a href=\"#tab1\" role=\"tab\" data-toggle=\"tab\" aria-controls=\"tab1\" aria-expanded=\"true\">Présentation</a>
                 </li>
-                <li role=\"presentation\">
+                <!--<li role=\"presentation\">
                     <a href=\"#tab2\" role=\"tab\" data-toggle=\"tab\" aria-controls=\"tab2\" aria-expanded=\"false\">Historique</a>
-                </li>
+                </li> -->
                 <li role=\"presentation\">
                     <a href=\"#tab3\" role=\"tab\" data-toggle=\"tab\" aria-controls=\"tab3\" aria-expanded=\"false\">Objectifs</a>
                 </li>
             </ul>
             <div id=\"tab-content\" class=\"tab-content\">
                 <div role=\"tabpanel\" class=\"tab-pane fade active in\" id=\"tab1\" aria-labelledby=\"tab1\">
-                    <p>Une présentation du club.</p>
+                    <p>";
+            // line 109
+            echo twig_escape_filter($this->env, $this->getAttribute($context["c"], "presentation", array()), "html", null, true);
+            echo "</p>
                 </div>
-                <div role=\"tabpanel\" class=\"tab-pane fade\" id=\"tab2\" aria-labelledby=\"tab2\">
-                    <p>L'historique du club.</p>
-                </div>
+                <!--<div role=\"tabpanel\" class=\"tab-pane fade\" id=\"tab2\" aria-labelledby=\"tab2\">
+                    <p></p> 
+                </div>-->
                 <div role=\"tabpanel\" class=\"tab-pane fade\" id=\"tab3\" aria-labelledby=\"tab3\">
-                    <p>Les objectifs du club.</p>
+                    <p>";
+            // line 115
+            echo twig_escape_filter($this->env, $this->getAttribute($context["c"], "objectifs", array()), "html", null, true);
+            echo "</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-</div>
+      ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['c'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 122
+        echo "</div>
     </section>
 
     <section id=\"features\">
@@ -397,13 +417,13 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
                 <div class=\"portfolio-item creative\">
                     <div class=\"portfolio-item-inner\">
                         <img class=\"img-responsive\" src=\"";
-        // line 318
+        // line 319
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/portfolio/111.jpg"), "html", null, true);
         echo "\" alt=\"\">
                         <div class=\"portfolio-info\">
                             <h3>1</h3>
                             <a class=\"preview\" href=\"";
-        // line 321
+        // line 322
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/portfolio/111.jpg"), "html", null, true);
         echo "\" rel=\"prettyPhoto\"><i class=\"fa fa-eye\"></i></a>
                         </div>
@@ -413,13 +433,13 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
                 <div class=\"portfolio-item corporate portfolio\">
                     <div class=\"portfolio-item-inner\">
                         <img class=\"img-responsive\" src=\"";
-        // line 328
+        // line 329
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/portfolio/222.jpg"), "html", null, true);
         echo "\" alt=\"\">
                         <div class=\"portfolio-info\">
                             <h3>2</h3>
                             <a class=\"preview\" href=\"";
-        // line 331
+        // line 332
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/portfolio/222.jpg"), "html", null, true);
         echo "\" rel=\"prettyPhoto\"><i class=\"fa fa-eye\"></i></a>
                         </div>
@@ -429,13 +449,13 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
                 <div class=\"portfolio-item creative\">
                     <div class=\"portfolio-item-inner\">
                         <img class=\"img-responsive\" src=\"";
-        // line 338
+        // line 339
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/portfolio/333.jpg"), "html", null, true);
         echo "\" alt=\"\">
                         <div class=\"portfolio-info\">
                             <h3>3</h3>
                             <a class=\"preview\" href=\"";
-        // line 341
+        // line 342
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/portfolio/333.jpg"), "html", null, true);
         echo "\" rel=\"prettyPhoto\"><i class=\"fa fa-eye\"></i></a>
                         </div>
@@ -445,13 +465,13 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
                 <div class=\"portfolio-item corporate\">
                     <div class=\"portfolio-item-inner\">
                         <img class=\"img-responsive\" src=\"";
-        // line 348
+        // line 349
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/portfolio/4444.jpg"), "html", null, true);
         echo "\" alt=\"\">
                         <div class=\"portfolio-info\">
                             <h3>4</h3>
                             <a class=\"preview\" href=\"";
-        // line 351
+        // line 352
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/portfolio/4444.jpg"), "html", null, true);
         echo "\" rel=\"prettyPhoto\"><i class=\"fa fa-eye\"></i></a>
                         </div>
@@ -461,13 +481,13 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
                 <div class=\"portfolio-item creative portfolio\">
                     <div class=\"portfolio-item-inner\">
                         <img class=\"img-responsive\" src=\"";
-        // line 358
+        // line 359
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/portfolio/11.jpg"), "html", null, true);
         echo "\" alt=\"\">
                         <div class=\"portfolio-info\">
                             <h3>5</h3>
                             <a class=\"preview\" href=\"";
-        // line 361
+        // line 362
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/portfolio/11.jpg"), "html", null, true);
         echo "\" rel=\"prettyPhoto\"><i class=\"fa fa-eye\"></i></a>
                         </div>
@@ -477,13 +497,13 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
                 <div class=\"portfolio-item corporate\">
                     <div class=\"portfolio-item-inner\">
                         <img class=\"img-responsive\" src=\"";
-        // line 368
+        // line 369
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/portfolio/1.jpg"), "html", null, true);
         echo "\" alt=\"\">
                         <div class=\"portfolio-info\">
                             <h3>5</h3>
                             <a class=\"preview\" href=\"";
-        // line 371
+        // line 372
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/portfolio/1.jpg"), "html", null, true);
         echo "\" rel=\"prettyPhoto\"><i class=\"fa fa-eye\"></i></a>
                         </div>
@@ -493,13 +513,13 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
                 <div class=\"portfolio-item creative portfolio\">
                     <div class=\"portfolio-item-inner\">
                         <img class=\"img-responsive\" src=\"";
-        // line 378
+        // line 379
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/portfolio/2.jpg"), "html", null, true);
         echo "\" alt=\"\">
                         <div class=\"portfolio-info\">
                             <h3>7</h3>
                             <a class=\"preview\" href=\"";
-        // line 381
+        // line 382
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/portfolio/2.jpg"), "html", null, true);
         echo "\" rel=\"prettyPhoto\"><i class=\"fa fa-eye\"></i></a>
                         </div>
@@ -509,13 +529,13 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
                 <div class=\"portfolio-item corporate\">
                     <div class=\"portfolio-item-inner\">
                         <img class=\"img-responsive\" src=\"";
-        // line 388
+        // line 389
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/portfolio/3.jpg"), "html", null, true);
         echo "\" alt=\"\">
                         <div class=\"portfolio-info\">
                             <h3>8</h3>
                             <a class=\"preview\" href=\"";
-        // line 391
+        // line 392
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/portfolio/3.jpg"), "html", null, true);
         echo "\" rel=\"prettyPhoto\"><i class=\"fa fa-eye\"></i></a>
                         </div>
@@ -537,7 +557,7 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
                         <div class=\"carousel-inner\" role=\"listbox\">
                             <div class=\"item active\">
                                 <p><img class=\"img-circle img-thumbnail\" src=\"";
-        // line 410
+        // line 411
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/testimonial/1.jpg"), "html", null, true);
         echo "\" alt=\"\"></p>
                                 <h4>Sabri Sahli</h4>
@@ -552,7 +572,7 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
                             </div>
                             <div class=\"item\">
                               <p><img class=\"img-circle img-thumbnail\" src=\"";
-        // line 422
+        // line 423
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/testimonial/0.jpg"), "html", null, true);
         echo "\" alt=\"\"></p>
                               <h4>Mustapha Ben Yedder</h4>
@@ -567,7 +587,7 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
                             </div>
                             <div class=\"item\">
                               <p><img class=\"img-circle img-thumbnail\" src=\"";
-        // line 434
+        // line 435
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("images/testimonial/3.jpg"), "html", null, true);
         echo "\" alt=\"\"></p>
                               <h4>Safa Kachroudi</h4>
@@ -726,54 +746,54 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
 </footer><!--/#footer-->
 
     <script src=\"";
-        // line 590
+        // line 591
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 591
+        // line 592
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 592
+        // line 593
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("http://maps.google.com/maps/api/js?sensor=true"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 593
+        // line 594
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/owl.carousel.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 594
+        // line 595
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/mousescroll.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 595
+        // line 596
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/smoothscroll.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 596
+        // line 597
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery.prettyPhoto.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 597
+        // line 598
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery.isotope.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 598
+        // line 599
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/jquery.inview.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 599
+        // line 600
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/wow.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 600
+        // line 601
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("js/main.js"), "html", null, true);
         echo "\"></script>
 </body>
 </html>
 ";
         
-        $__internal_91105782615eec743ac8631a41ecd8b65c15b645571579065c63e6c3242493a4->leave($__internal_91105782615eec743ac8631a41ecd8b65c15b645571579065c63e6c3242493a4_prof);
+        $__internal_e15c599e5ffa7acdb4a27c339c19f9687a92969119fa8a3b6a83aeaf24a7b083->leave($__internal_e15c599e5ffa7acdb4a27c339c19f9687a92969119fa8a3b6a83aeaf24a7b083_prof);
 
     }
 
@@ -789,7 +809,7 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
 
     public function getDebugInfo()
     {
-        return array (  770 => 600,  766 => 599,  762 => 598,  758 => 597,  754 => 596,  750 => 595,  746 => 594,  742 => 593,  738 => 592,  734 => 591,  730 => 590,  571 => 434,  556 => 422,  541 => 410,  519 => 391,  513 => 388,  503 => 381,  497 => 378,  487 => 371,  481 => 368,  471 => 361,  465 => 358,  455 => 351,  449 => 348,  439 => 341,  433 => 338,  423 => 331,  417 => 328,  407 => 321,  401 => 318,  157 => 76,  143 => 68,  139 => 67,  129 => 61,  125 => 60,  99 => 37,  82 => 23,  78 => 22,  74 => 21,  70 => 20,  66 => 19,  61 => 17,  57 => 16,  53 => 15,  49 => 14,  45 => 13,  41 => 12,  37 => 11,  33 => 10,  22 => 1,);
+        return array (  790 => 601,  786 => 600,  782 => 599,  778 => 598,  774 => 597,  770 => 596,  766 => 595,  762 => 594,  758 => 593,  754 => 592,  750 => 591,  591 => 435,  576 => 423,  561 => 411,  539 => 392,  533 => 389,  523 => 382,  517 => 379,  507 => 372,  501 => 369,  491 => 362,  485 => 359,  475 => 352,  469 => 349,  459 => 342,  453 => 339,  443 => 332,  437 => 329,  427 => 322,  421 => 319,  222 => 122,  209 => 115,  200 => 109,  178 => 90,  172 => 86,  168 => 85,  157 => 76,  143 => 68,  139 => 67,  129 => 61,  125 => 60,  99 => 37,  82 => 23,  78 => 22,  74 => 21,  70 => 20,  66 => 19,  61 => 17,  57 => 16,  53 => 15,  49 => 14,  45 => 13,  41 => 12,  37 => 11,  33 => 10,  22 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -876,12 +896,12 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
 /*     <h2 class="section-title text-center wow fadeInDown">A propos de nous</h2>*/
 /*     <!--<p class="text-center wow fadeInDown">Sesame Tech Club est un club crée par l'initiative d'un groupe d'étudiants de l'université Sesame <br> Notre club permet aux nouveaux étudiants de s’intégrer et de s’adapter à la vie estudiantine au sein de l’université SESAME.</p>-->*/
 /* </div>*/
-/* */
+/* {% for c in club %}*/
 /* <div class="row">*/
 /*     <div class="col-sm-6 wow fadeInLeft">*/
 /*         <h3 class="column-title">Video Intro</h3>*/
 /*         <div class="embed-responsive embed-responsive-16by9">*/
-/*             <iframe width="560" height="315" src="https://www.youtube.com/embed/L2wOZkW7zIY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>*/
+/*             <iframe width="560" height="315" src="{{c.lienVideo}}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>*/
 /*         </div>*/
 /*     </div>*/
 /* */
@@ -891,27 +911,28 @@ class __TwigTemplate_e05fb76bdab2bd11c7a2c719874d63a0b2fd231064b608bffad3e6c5065
 /*                 <li role="presentation" class="active">*/
 /*                     <a href="#tab1" role="tab" data-toggle="tab" aria-controls="tab1" aria-expanded="true">Présentation</a>*/
 /*                 </li>*/
-/*                 <li role="presentation">*/
+/*                 <!--<li role="presentation">*/
 /*                     <a href="#tab2" role="tab" data-toggle="tab" aria-controls="tab2" aria-expanded="false">Historique</a>*/
-/*                 </li>*/
+/*                 </li> -->*/
 /*                 <li role="presentation">*/
 /*                     <a href="#tab3" role="tab" data-toggle="tab" aria-controls="tab3" aria-expanded="false">Objectifs</a>*/
 /*                 </li>*/
 /*             </ul>*/
 /*             <div id="tab-content" class="tab-content">*/
 /*                 <div role="tabpanel" class="tab-pane fade active in" id="tab1" aria-labelledby="tab1">*/
-/*                     <p>Une présentation du club.</p>*/
+/*                     <p>{{c.presentation}}</p>*/
 /*                 </div>*/
-/*                 <div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledby="tab2">*/
-/*                     <p>L'historique du club.</p>*/
-/*                 </div>*/
+/*                 <!--<div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledby="tab2">*/
+/*                     <p></p> */
+/*                 </div>-->*/
 /*                 <div role="tabpanel" class="tab-pane fade" id="tab3" aria-labelledby="tab3">*/
-/*                     <p>Les objectifs du club.</p>*/
+/*                     <p>{{c.objectifs}}</p>*/
 /*                 </div>*/
 /*             </div>*/
 /*         </div>*/
 /*     </div>*/
 /* </div>*/
+/*       {% endfor %}*/
 /* </div>*/
 /*     </section>*/
 /* */
